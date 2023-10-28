@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing</title>
+    <link rel="stylesheet" href="traversing.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- <div class="parent">
+            <h2>Heading</h2>
+            <div class="child">
+                <h3>Hello All</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sapiente necessitatibus quam quas
+                    iure, quasi corrupti possimus beatae sed laboriosam consectetur omnis accusantium ex, consequatur
+                    pariatur quibusdam cumque, nihil libero.</p>
+            </div>
+        </div> -->
+
+
+        <!-- <div id="kohli">
+            <button>Jadeja</button>
+            <h3>Sachin Tendulkar</h3>
+        </div> -->
+
+
+
+        <div class="box">
+            <h3>Box 1</h3>
+            <img src="https://placehold.co/300x150" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, obcaecati dolores. Aspernatur, ipsa,
+                provident distinctio, dolor eligendi officiis voluptatum maiores sint ab dolorum facilis sed dicta
+                doloribus veritatis qui enim.</p>
+        </div>
+        <div class="box">
+            <h3>Box 2</h3>
+            <img src="https://placehold.co/300x150" alt="">
+            <p>Maxime tempore sint accusantium est excepturi, libero voluptas nemo ex nisi. Ipsam nihil tempore deserunt
+                dolore fugiat fugit culpa illo ex, enim delectus? Tenetur dolor porro, odit quod nesciunt hic?</p>
+        </div>
+        <div class="box">
+            <h3>Box 3</h3>
+            <img src="https://placehold.co/300x150" alt="">
+            <p>Eaque officia minus error ut perspiciatis velit molestiae modi excepturi dolor eum? Maxime debitis
+                quisquam dolor tenetur voluptates velit assumenda, quas pariatur? Quam quos odio autem laborum
+                dignissimos quasi ullam.</p>
+        </div>
+        <div class="box">
+            <h3>Box 4</h3>
+            <img src="https://placehold.co/300x150" alt="">
+            <p>Rerum tenetur exercitationem ipsam pariatur culpa eveniet ab id ipsa sit. Quidem inventore nihil illo
+                laboriosam doloremque ipsa corporis, aspernatur commodi reprehenderit recusandae architecto ex
+                exercitationem. Dicta sapiente non nulla.</p>
+        </div>
+
+
+
+    </div>
+    <button>gayab</button>
+
+    <script>
+
+
+        let heads = document.querySelectorAll("h3")
+        let imgpart = document.querySelectorAll("img")
+        let parapart = document.querySelectorAll("p")
+        for (let i = 0; i < heads.length; i++) {
+            heads[i].addEventListener("click", () => {
+                // imgpart[i].style.display = "none"
+                imgpart[i].classList.toggle("mystyle")
+                parapart[i].classList.toggle("mystyle")
+            })
+        }
+
+
+
+
+
+
+
+
+        //TRAVERSING: to move from one element to another
+        //previousElementSibling, nextElementSibling, children
+
+        // const para = document.querySelector("p")
+        // console.log(para.previousElementSibling) // h3
+
+        // const h2 = document.querySelector("h2")
+        // console.log(h2.nextElementSibling) //div class child
+
+        // const parent = document.querySelector(".parent")
+
+        // console.log(parent.children) //returns an HTML Collection, which is similar to array, not exactly an array
+
+
+        // const btn = document.querySelector("button")
+        // // const head=document.querySelector("h3")
+        // btn.addEventListener("click", () => {
+        //     // console.log("data")
+        //     console.log(btn.nextElementSibling.innerHTML)
+        // })
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

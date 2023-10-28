@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    display: flex;
+}
+.box{
+    border: 2px solid ;
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    width: 600px;
+
+}
+.mystyle{
+    display: none;
+}
